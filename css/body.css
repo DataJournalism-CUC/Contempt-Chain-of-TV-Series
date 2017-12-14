@@ -1,0 +1,29 @@
+body{width: 100%,font-size:14px;margin:0px;
+	background-image: url("../img/bg_texture.jpg");
+	background-repeat: repeat;
+	font-family: "微软雅黑";
+	overflow-x: hidden;
+
+}
+
+#seventh,#third,#first,.pre,#second,#forth,#fifth,#sixth{position: relative;}
+#seventh,#third,#first,.pre,#second,#forth,#fixed,#fifth,#sixth{width: 1000px;margin-bottom:100px; left:50%;margin-left:-500px;}
+/*#container{width: 1200px;}*/
+
+/*#fixed{display: none;}*/
+#first{height: 340px;}
+.pre{height: 850px;}
+/*#toolbar-container{display: none;}*/
+#first{margin-top:80px;padding-top:280px; }
+#lastp{height: 500px;}
+
+#foam{height: 600px;}
+.bubble_chart{width: 300px;height: 270px;float:left;margin: 10px;}
+.bubble_chart p{padding:120px 28px 20px 0px;}
+
+#bump_chart{position: relative;}
+#Fcover{margin:0px;padding:0px;width:1000px;height: 50px;position: absolute;bottom: 20px;background-image: url("../img/bg_texture.jpg");background-repeat: repeat;z-index: 5;}
+#forth .footinfo{z-index: 10;position: relative;top: -50px;}
+
+#seventh hr{color: #eb4a45;}
+#seventh div .Smtitle{font-size: 14px;letter-spacing: 2px;line-height: 26px;}

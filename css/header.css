@@ -1,0 +1,39 @@
+#header_bg,#header{width: 100%;margin:0px;padding: 0px;}
+#header{position: relative;}
+#header_bg{z-index: 1; /*-webkit-filter: grayscale(90%);*/}
+
+
+#Title{width:100%;height:600px;z-index: 5;top:0px;text-align: center;color: #ccc}
+
+/*添加遮罩*/
+#mask{position:absolute;z-index:3;top:0px;width:100%;background-color: rgba(0,0,0,0.8);padding-top: 56.25%;}
+#mask div{position:absolute;width:100%;height: 100%; }
+
+#Title,#Title div{position: absolute;}
+
+#Title div{width: 900px;left: 50%;margin-left: -450px;}
+
+#Title h1{
+	width: 100%;
+	margin-top: 250px;
+/*	padding-left:20px;
+*/	text-shadow: 3px 3px 3px #f26b68;
+	font: bold 100px "微软雅黑";
+	letter-spacing: 20px;
+	color: #fffaf0;
+	position: relative;
+	left:20px;
+}
+
+#Title>p{width:100%;text-align: center;position:absolute;top:265px;left:5px;}
+#Title>p img{width: 100px;height:100px;cursor: pointer;transition: all 0.5s ease;}
+/*#Title>p img:hover{transform: rotate(360deg);}*/
+
+#Title h4{margin-top:0px;font-size: 30px;letter-spacing:5px;
+	text-shadow: 0px 0px 4px #2a2a2a;color: #fffaf0;
+}
+#Title h6{
+	margin-top: 40px;
+	font: 18px "微软雅黑 Light";
+	letter-spacing: 4px
+}

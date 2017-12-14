@@ -1,0 +1,53 @@
+/*#second div{}*/
+#violin{width: 1000px;height:560px;position:relative ;}
+#Pviolin{position: absolute;top:0px;z-index: 2;left: -50px;}
+#Iviolin{position: absolute;top:50px;z-index: 1;left: 70px;}
+#Iviolin div{/*display:none;*/width: 160px;padding: 80px 20px 20px 10px;position: absolute;}
+
+#Iviolin div h3{display: none;}
+
+#Iviolin div p{font-size: 12px;letter-spacing: 2px;color: #FFFAF0;/*color: #9b4454;*/line-height: 15px;}
+#Iviolin div p span{font-size: 13px;letter-spacing: 1px;display:inline-block;width: 50px;text-align: right;/*color: #FFFAF0;*//*color: #9b4454;*/margin-right: 10px;}
+
+.violin_img{float:left;width: 200px;cursor: pointer;}
+
+/*#Pviolin>.yj:hover #Iviolin>.yj{display: block;}
+#Pviolin>.mj:hover #Iviolin>.mj{display: block;}
+#Pviolin>.rj:hover #Iviolin>.rj{display: block;}violin>.hj:hover #Iviolin>.hj{display: block;}
+#Pviolin>.gcj:hover #Iviolin>.gcj{display: block;}
+*/
+#second .Sinfo{}
+
+/*.picNote{height: ;position: relative;top: -100px;}
+.picNote1{left:50%;margin-left:75px;width: 150px;position: absolute;}
+#second .picNote1 img{width: 100%;}
+.picNote2{float: right;}*/
+
+#second .picNote{position: relative;top:-100px;}
+#second .picNote1{}
+#second .picNote1 p{text-align: center;}
+#second .picNote1 img{width: 160px;}
+
+#second .picNote2{}
+#second .picNote2 p{text-align: right;font-size: 12px;color: #a7a5a6;letter-spacing: 1px;line-height: 20px;}
+
+
+#violin .yj:hover{}
+#violin .mj:hover{}
+#violin .rj:hover{}
+#violin .hj:hover{}
+#violin .gcj:hover{}
+
+
+#Iviolin .yj{/*top:;*/left:0px ;}
+#Iviolin .mj{/*top:;*/left:200px ;}
+#Iviolin .rj{/*top:;*/left:400px ;}
+#Iviolin .hj{/*top:;*/left:600px ;}
+#Iviolin .gcj{/*top:;*/left:800px ;}
+
+#Iviolin .yj p span{color:#9b4454 }
+#Iviolin .mj p span{color:#ff6d6e }
+#Iviolin .rj p span{color:#33b9d6}
+#Iviolin .hj p span{color:#927ce0 }
+#Iviolin .gcj p span{color:#ffa88a }
+

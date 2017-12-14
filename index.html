@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/second.css">
+
+	<link rel="stylesheet" type="text/css" href="css/fixed.css">
+	<link rel="stylesheet" type="text/css" href="css/fifth.css">
+	<link rel="stylesheet" type="text/css" href="css/trend.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+
+	<!-- <style type="text/css">
+		#toolbar-container{display: none;}
+	</style> -->
+
+	<!-- <link rel="stylesheet" type="text/css" href="js/anime-master/documentation/assets/css/documentation.css"> -->
+
+
+</head>
+
+<body>
+	<div id="header">
+		<!-- 背景视频 -->
+		<video id="header_bg" autoplay loop>
+			<div></div>
+			<source src="video/header_bg.mp4" type="video/mp4"/>
+		</video>
+		
+
+		<!-- 固定不变的五个剧种 -->
+		<div id="fixed">
+			<!-- <div class="title">
+				<div class="title" id="main_title">影视剧鄙视链</div>
+				<div class="title" id="sub_title"></div> -->
+			<!-- </div> -->
+
+			<div class="line">
+				<div class="circle el" id="mj"></div>
+			</div>
+			<div class="line">
+				<div class="circle el" id="rj"></div>
+			</div>
+			<div class="line">
+				<div class="circle el"  id="yj"></div>
+			</div>
+			<div class="line">
+				<div class="circle el"  id="gcj"></div>
+			</div>
+			<div class="line">
+				<div class="circle el"  id="hj"></div>
+			</div>
+			<div class="line player"> <button id="explore" class="hvr-outline-out">start</button></div>
+		</div>
+
+		<div id="mask">
+			<div></div>
+		</div>
+
+		<!-- 网页标题 -->
+		<div id="Title">
+			<h1>电视剧  &nbsp; 鄙视链</h1>
+			<p><img class="hvr-buzz" src="img/LOGO.png"></p>
+			<div>
+				<h4>基于豆瓣网站6000余部电视剧信息分析</h4>
+				<p></p>
+				<h6>设计者 | 熊玉兰 崔雨晴</h6>
+			</div>
+
+		</div>
+	</div>
+
+<!-- <div id="container"> -->
+
+
+
+	<!-- 图一 分数-->
+	<div id="first">
+    	<div class=".pre">
+	    	<p class="Btitle">
+				何为电视剧鄙视链
+			</p>
+			<p class="Minfo">
+				近年来传播领域在极速发展中出现了许多异质化现象，媒介鄙视链正是其中一种。而根据2012年南方都市报的报道，在电视剧领域出现了如下的鄙视链：英剧>美剧>日剧>韩剧>港剧>台剧>内地剧>泰剧。			
+			</p>
+			<p class="Minfo">
+				这样的鄙视链是否真的存在，鄙视程度有多深，以及这种鄙视链形成的影响因素，都是值得探究的问题。我们选取中国电视剧爱好者最重要的网络聚集地——豆瓣社区，按照电视剧剧种进行数据抓取，通过分析电视剧受众的评分、讨论以及评论行为以期对上述问题做出解答。
+			</p>
+			<p class="Subinfo">
+				从五个小球的大小很容易看出电视剧评分均值明显差异，其大小顺序与鄙视链顺序一致，即“英剧>美剧>日剧>韩剧>国产剧”，因此我们认为豆瓣评分初步印证了“电视剧鄙视链”存在的真实性。
+			</p>
+		</div>
+	</div>
+
+	
+
+
+	<!-- 图二 分数小提琴图-->
+	<div id="second">
+		<div class="Stitle">
+			<p class="Smtitle">鄙视链中的三级结构</p>
+			<p class="Stinfo">
+				通过对豆瓣评分的分布情况进一步统计，我们将它们的分布特征归纳为一个简单的三级结构，第一级为英剧和美剧，第二级为日剧和韩剧，第三级为国产剧。在同一等级内部有较为相似的特点，而不同等级间又有较为明显的差异。
+
+			</p>
+		</div>
+		<div id="violin">
+			<div id="Pviolin">
+				<img class="violin_img hvr-grow yj" src="img/yj.png">
+				<img class="violin_img hvr-grow mj" src="img/mj.png">
+				<img class="violin_img hvr-grow rj" src="img/rj.png">
+				<img class="violin_img hvr-grow hj" src="img/hj.png">
+				<img class="violin_img hvr-grow gcj" src="img/gcj.png">
+			</div>
+			<div id="Iviolin">
+				<div class="Iviolin yj"><h3>英剧</h3><p><span>ave</span>8.3</p><p><span>max</span>9.8</p><p><span>75%</span>8.9</p><p><span>50%</span>8.4</p><p><span>25%</span>7.7</p><p><span>min</span>5.4</p><p><span>方差</span>0.6</p></div>
+				<div class="Iviolin mj"><h3>美剧</h3><p><span>ave</span>8.2</p><p><span>max</span>9.8</p><p><span>75%</span>8.9</p><p><span>50%</span>8.5</p><p><span>25%</span>7.6</p><p><span>min</span>4.6</p><p><span>方差</span>0.7</p></div>
+				<div class="Iviolin rj"><h3>日剧</h3><p><span>ave</span>7.7</p><p><span>max</span>9.6</p><p><span>75%</span>8.2</p><p><span>50%</span>7.7</p><p><span>25%</span>6.8</p><p><span>min</span>4.5</p><p><span>方差</span>0.8</p></div>
+				<div class="Iviolin hj"><h3>韩剧</h3><p><span>ave</span>7.2</p><p><span>max</span>9.6</p><p><span>75%</span>7.8</p><p><span>50%</span>7.2</p><p><span>25%</span>6.6</p><p><span>min</span>4.7</p><p><span>方差</span>0.7</p></div>
+				<div class="Iviolin gcj"><h3>国产剧</h3><p><span>ave</span>6.3</p><p><span>max</span>9.2</p><p><span>75%</span>7.3</p><p><span>50%</span>6.4</p><p><span>25%</span>5.4</p><p><span>min</span>2.7</p><p><span>方差</span>1.8</p></div>
+			</div>
+		</div>
+		<div class="picNote">
+			<div class="picNote1"><p><img src="img/tuli.png"></p></div>
+			<div class="picNote2">
+				<p>
+					电视剧得分分布情况概览：纵轴表示分值，颜色深浅表示数量<br>即颜色较深位置表示位于该分数段的电视剧数量较多。白色星星为该国电视剧豆瓣评分均值
+				</p>
+				
+			</div>
+		</div>
+		<div class="SSinfo">
+			<p class="Sminfo">
+				从提琴图中可以看到，五类电视剧分数的平均分差异明显，其大小顺序与鄙视链顺序一致，即“英剧>美剧>日剧>韩剧>国产剧”，豆瓣评分初步印证了“电视剧鄙视链”存在的真实性。
+
+			</p>
+			<p class="Sminfo">
+				综合来看，位于第一级的英剧和美剧均具有较高的平均分和最高值，且方差较小；第二级的日剧和韩剧平均分接近，略低于一一级，方差与一级接近；而位于第三级的国产剧，平均分较低，方差也较大，整体的评分分布非常分散。因此可以认为豆瓣用户对英美剧普遍持较高的评价，且意见较为一致，而对于国产剧，大家“爱恨交织”，这也与国内电视剧质量参差不齐有关。
+			</p>
+			<p></p>
+		</div>
+	</div>
+
+	
+
+	<!-- 主题二分隔段 -->
+	<div class="pre">
+		<p class="Subinfo"></p>
+		<p class="Btitle"><span>影响鄙视链产生的两个因素</span></p>
+		<div align="center"><img src="img/chatu.png" style="width: 1000px;"></div>
+		<p class="footinfo">
+			这是评分和参评人数均居各国榜首的五部优秀电视剧，它们在话题量和好评度方面都取得了很好的成绩，成为值得学习的经典之作<br>这五部电视剧为什么能够在豆瓣用户中获得欢迎？它们在制作和选题方面有什么特别之处？它们的成功能否复制？都是我们值得近一步探究的问题
+		</p>
+		<p class="Minfo">
+			仅从评分一个维度，我们似乎已经可以看出电视剧鄙视链的存在，豆瓣评分的差异展示了豆瓣用户对不同国家电视剧的不同评价，但我们并不能因此断言这样的刻板印象单纯由国别产生。
+		</p>
+		<p class="Subinfo">
+			「刻板印象指的是，人们通过整合有关信息及个人经验形成的一种针对特定对象的既定认知模式。社会认同理论认为，刻板印象是社会分类和比较的结果，人们总是倾向于以一定的标准将事物进行归类，使信息的提取和运用结构化。」
+		</p>
+		<p class="Minfo">
+			在电视剧鄙视链这一刻板印象的形成过程中，参与评分的豆瓣用户们整合了什么样的信息、形成了怎样的个人经验，从而使他们对于各国的电视剧形成较为统一和固定的评价呢？五国电视剧是否有各自的特点，这些特点是否影响了用户们的观剧体验而使他们产生或好或坏的印象？或者是否有其他与电视剧无关的因素影响了用户们的态度？
+		</p>
+		<p class="Minfo">
+			通过查阅相关资料和分析数据，我们总结了以下两个主要影响因素——【题材】、【社会话题度】。
+		</p>
+
+
+
+
+
+
+		
+	</div>
+
+
+	<!-- 图三 题材泡沫图-->
+	<div id="third">
+		<div class="Stitle">
+			<p class="Smtitle">
+				各国电视剧在题材方面各有侧重
+			</p>
+			<p class="Stinfo">
+				一部电视剧可能有多种题材，为方便统计，我们将每一题材分离出来进行分析。根据豆瓣已有分类，电视剧题材可分为27类，五国电视剧在选择题材方面的差异可能会影响到豆瓣观众对于该剧的评价，因此我们对各国题材的数量和评分进行了统计，以便深入观察五国在题材方面的偏好和特点。
+			</p>
+		</div>
+		<div id="foam">
+		 	<div id="visualization_yj" class="bubble_chart"></div>
+			<div id="visualization_mj" class="bubble_chart"></div>
+			<div class="bubble_chart Sminfo">
+				<p>
+					五国电视剧在题材选择上具有较大差异，英剧、美剧及日剧题材丰富，韩剧、国产剧题材略少。这和各国的社会政治、文化等因素息息相关。
+				</p>
+			</div>
+			<div id="visualization_rj" class="bubble_chart"></div>
+			<div id="visualization_hj" 270px" class="bubble_chart"></div>
+			<div id="visualization_gcj" class="bubble_chart"></div>
+		</div>
+		<div class="footinfo">
+			<p>
+				图中气泡大小代表该国电视剧题材数量占比，其中【剧情】占比超过50%<br>且各国差异较小。为便于比较，剔除【题材】，仅展示其他题材的数量对比
+			</p>			
+		</div>
+		<div class="SSinfo">
+			<p class="Sminfo">
+				我们从泡沫图可以看到，英剧和美剧的题材数量分布结构较为相似，和其他三国电视剧在题材选择上有较大的差异。英美剧及日剧题材丰富，韩剧、国产剧题材略单一。在数量上，【爱情】在韩剧和国产剧中的占比犹为突出，而喜剧题材在另三国中占据了主要比例。
+			</p>
+			<p class="Sminfo">
+				因此可以认为五国在电视剧题材的选择上各有偏好，虽然各种题材基本都有所涉及，但也有各自较为特别的题材选择。那么各国电视剧数量占比多的题材是否能得到豆瓣用户更多的好评呢？
+			</p>
+		</div>
+
+	</div>
+
+
+	<!-- 图四 题材对比-->
+	<div id="forth">
+
+		<div id="bump_chart">
+			<!-- 跳跳图html -->
+			<div class='tableauPlaceholder' id='viz1512060373312' style='position: relative'>
+				<noscript>
+					<a href='#'>
+						<!-- <img alt='仪表板 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;rank_15&#47;1&#47;1_rss.png' style='border: none' /> -->
+					</a>
+				</noscript>
+				<object class='tableauViz'  style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+					<param name='embed_code_version' value='3' /> 
+					<param name='site_root' value='' />
+					<param name='name' value='final-3&#47;1_1' />
+					<param name='tabs' value='no' />
+					<param name='toolbar' value='yes' />
+					<!-- <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;h_&#47;h_13&#47;1_1&#47;1.png' />  -->
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<param name='display_overlay' value='yes' />
+					<param name='display_count' value='yes' />
+					<param name='filter' value='publish=yes' />
+				</object>
+			</div>   
+			
+			<div id="Fcover">
+			</div>
+			<div class="footinfo">
+				<p>
+					纵轴表示分数排序，即由高到低表示五国该题材分数的排名高低；气泡大小表示分数大小
+				</p>			
+			</div>
+		</div>
+
+		<div class="SSinfo">
+			<p class="Sminfo">
+				为方便观察，我们综合题材数量和评分情况选取了其中七个具有代表性的题材进行深入分析，即横轴中标明的七个题材。从排位来看，五国在七个题材的评分上所处排位较为固定，基本是按照鄙视链的顺序进行分布的。图中圆形图案的大小表示该题材在该国电视剧中的比例大小，每个国家都有各自数量占多数的题材，由此可见五国在题材偏好上的差异。
+			</p>
+			<p class="Sminfo">
+				结合分数和数量比例进行观察，能够看出英美剧中存在数量占比高的分数也高的现象，虽然也有少数特例，但我们认为在英美剧中题材对于评分是有一定影响的。日剧的排名较为稳定，虽然战争剧分数排位第一，但由于其数量较少我们无法判断该题材对于分数有很大的影响。相比之下，国产剧和韩剧的状况较为类似，虽然爱情、家庭题材数量占比很高，但其整体均分较低，因此我们最初推测在国产剧和韩剧中，题材并不能改变豆瓣用户在鄙视链中的刻板印象，但经过查阅资料，我们又得出了新的结论，我们猜测观众对于中韩两国电视剧的整体印象是否最初就来自于对爱情和家庭题材的印象，由于这两个题材数量占比太大导致一些观众并没有了解其他题材的情况，而是被这两个题材中鱼目混杂、质量参差不齐的情况影响了对于整体质量的判断。因此可以说在韩剧和国产剧中，题材本身就是刻板印象的一部分。
+			</p>
+			<p></p>
+		</div>
+
+	</div>
+
+	
+
+	<!-- 图五 评论情况散点图-->
+	<div id="fifth">
+		<div class="Stitle">
+			<p class="Smtitle">
+				社会话题度潜移默化影响用户的评价
+			</p>
+			<p class="Stinfo">
+				也许很多人观剧可能都有过从众的经历，选择观看身边的人都在追的剧，以免使自己脱离社交圈的共同话题；我们对一部剧的评价会被身边的人影响，或者因为他人的评价而选择看一部剧或者放弃观看；我们在评价一部剧时也许会参考其他观众的意见，虽然豆瓣评分具有匿名性，但沉默的螺旋并不没有消失，我们也许会因为大众的观点与自己相悖而放弃自己的评价。我们与生俱来的社会性使我们无法避免受到社会的影响，一部电视剧在社会中的关注度、话题热度、普遍的公众评价都可能在潜移默化地影响着我们。因此在这一部分我们希望结合各国电视剧的评分人数、讨论人数和长评短评的人数，分析社会讨论度对于评分的影响。
+
+			</p>
+		</div>
+		<div id="scatLegend">
+			<span status="false" group="英剧" class="hvr-float">英剧</span>
+			<span status="true" group="美剧" class="hvr-float">美剧</span>
+			<span status="false" group="日剧" class="hvr-float">日剧</span>
+			<span status="false" group="韩剧" class="hvr-float">韩剧</span>
+			<span status="true" group="国产剧" class="hvr-float">国产剧</span>
+		</div>
+		<div id="comment"></div>
+		<div class="footinfo">
+			<p>
+				四张图分别展示评分、讨论、长评、短评人数之间的关系，POINTS ON V/H LINE 表示与鼠标在相同的横/竖列的点所代表的电视剧<br>通过调节滑块可以看到不同人数段更清晰的数据差异。点击标签可以选择不同国家的电视剧进行相互对比
+			</p>			
+		</div>
+		<div class="SSinfo">
+			<p class="Sminfo">
+				散点图中的点的离散程度能够表示横纵坐标的相关程度，我们可以明显看出第一张图的评分人数和讨论人数之间的相关度最大，因此可以认为一部剧中豆瓣用户参与话题讨论的积极程度可以反应这部剧整体的话题度。
+			</p>
+			<p class="Sminfo">
+				相比之下长评人数、短评人数和评分人数之间的相关程度就没有那么高，虽然根据豆瓣的评论模式，编写短评和长评的用户需要对该剧进行评分，但可以看出参与评分的大多数用户并没有编写评论的积极性，而是更多的在“讨论”板块进行发言。总体而言，用户一般只会选择在四个板块（评分、讨论、短评、长评）中选择一个或两个发表自己的评价。
+			</p>
+			<p class="Sminfo">
+				因此我们认为，豆瓣用户在评分时可能会参考“讨论”与“评论”中的意见，尤其是”讨论“中的内容更容易影响用户的态度。
+			</p>
+			<p></p>
+		</div>
+	</div>
+
+	<!-- 主题三分隔段 -->
+	<div class="pre" id="lastp">
+		<!-- 承上 -->
+		<p class="Btitle">SUMMARY</p>
+		<p class="Minfo">
+			通过对上面两个因素的分析，我们有如下结论：
+		</p>
+		<ul>
+			<li>
+				<p class="Minfo">
+					题材的选择会影响豆瓣用户对该剧的评价，各国在电视剧题材上的侧重会影响观众对该国电视剧整体质量的印象。当一部数量比例占多数的电视剧题材没有整体较好的质量时，观众可能对该国电视剧的整体印象产生不好的印象，久而久之也许会刻板印象，使鄙视链产生。
+				</p>
+			</li>
+			<li>
+				<P class="Minfo">
+					我们在这里分析的话题讨论度仅限于在豆瓣平台，虽然豆瓣用户接触电视剧的渠道很丰富，但仅从豆瓣一个平台就能够看出他们会受到他人意见的影响，他们也许不会参与讨论和评论，但在讨论区形成的较为统一的意见会影响他们的态度，进而影响他们对各国电视剧整体的评价。
+				</p>
+			</li>
+		</ul>
+		<p class="Minfo">
+			在豆瓣社区的电视剧鄙视链形成过程中，也许还会有其他很多影响因素，例如播放模式、社会文化背景、国家政策等等，但由于篇幅限制，这里暂不赘述。但能够证明的是，这些影响因素也许和电视剧的质量有关，也可能是电视剧的传播过程影响了观众的态度，以上种种都为电视剧鄙视链奠定了基础，或者成为鄙视链加深的助推剂。
+		</p>
+		<p class="Subinfo"></p>
+
+		<!-- 过渡 -->
+
+
+	</div>
+
+	<!-- 图六 时间趋势图-选取02-17年各国前15名-->
+	<div id="sixth">
+		<!-- <div id="trend"></div> -->
+		<div id="Tselect">
+			<select class="Tselect" id="country-filter">
+				<option value='all'>国别</option>
+				<option value='英剧'>英剧</option>
+				<option value='美剧'>美剧</option>
+				<option value='日剧'>日剧</option>
+				<option value='韩剧'>韩剧</option>
+				<option value='国产剧'>国产剧</option>
+			</select>
+			<select class="Tselect" id="category-filter">
+				<option value='all'>题材</option>
+				<option value='剧情'>剧情</option>
+				<option value='喜剧'>喜剧</option>
+				<option value='犯罪'>犯罪</option>
+				<option value='悬疑'>悬疑</option>
+				<option value='爱情'>爱情</option>
+				<option value='惊悚'>惊悚</option>
+				<option value='历史'>历史</option>
+				<option value='科幻'>科幻</option>
+				<option value='家庭'>家庭</option>
+				<option value='动作'>动作</option>
+				<option value='冒险'>冒险</option>
+				<option value='战争'>战争</option>
+				<option value='纪录片'>纪录片</option>各国
+				<option value='恐怖'>恐怖</option>
+				<option value='奇幻'>奇幻</option>
+			</select>
+		</div>
+		<div id="THtitle">
+			<h3><span>[探索] </span>各国评分Top15电视剧</h3>
+			<p></p>
+		</div>
+		<div id="trend2"></div>
+		<div class="footinfo">
+			<p>
+				选取15年各国评分人数高于75%中分数排名前15的电视剧，纵轴表示电视剧首播时间<br>横轴表示评分人数大小，从左往右按由小到大顺序排列，气泡大小表示分数高低
+			</p>			
+		</div>
+		<div class="SSinfo">
+			<p class="Sminfo"></p>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="pre" id="lastp">
+		<!-- 承上 -->
+		<p class="Btitle">鄙视链如何打破？</p>
+		<p class="Minfo">
+			综合上述分析，我们可以看到“电视剧鄙视链”在一定环境下确实存在，且可简化为——“英美剧鄙视日韩剧鄙视国产剧”，我们认为，电视剧鄙视链实际反映了受众对电视剧质量的认可程度。
+		</p>
+		<p class="Minfo">
+			鄙视链的形成过程受到多种因素的影响，这些因素有些是鄙视链形成的基础和成因，有些则是使鄙视链加重的助推剂。那么它们为什么能起到影响作用呢？以国产剧为例，出现较多的爱情、家庭题材并没有得到好评，通过分析我们认为是整体的质量参差不齐导致观众对国产剧整体产生不好的印象，那么是否可以认为在制作上国产剧应该更加重视质量的提高呢？在国产剧市场，制作方为追求宣发效果、明星效应等等表面工作，而忽视了在制作上的投入，这样的电视剧很明显是无法促进国产剧的良性发展的，因此我们建议国产剧应该将工作重心更多向剧本和制作环节倾斜：在题材选择和主题上进行创新，在优秀的传统文化和丰富的现实生活中挖掘故事，体现更深的人文关怀；规范国内片酬市场，合理规划宣发工作，将更多资金投入到剧本和制作中；学习其他国家优秀电视剧的制作经验，但在学习的同时也要有自己的创新。只有真正将心思放在制作优秀的作品上，才能收获更多受众好评，进一步取得良好的经济和社会效益。    
+		</p>
+		<p class="Subinfo"></p>
+
+
+	</div>
+
+	<!-- 脚注 -->
+	<div id="seventh">
+		<hr width="400px" height="20px" align="left">
+		<div class="Stitle">
+			<p class="Smtitle">特别感谢：谈和</p>
+			<p class="Smtitle">
+				数据和图片来源：豆瓣网站
+			</p>
+			<p class="Smtitle">制作软件：Tableau | Echarts | p5.js | carrotsearch.foamtree.js</p>
+			<p class="Smtitle">如有问题，欢迎指正</p>
+		</div>
+
+	</div>
+
+
+
+
+
+
+<!-- 跳跳图js -->
+<script type='text/javascript'>                    
+	var divElement = document.getElementById('viz1512060373312');                    
+	var vizElement = divElement.getElementsByTagName('object')[0];                    
+		vizElement.style.width='1000px';
+		// vizElement.style.maxHeight='550px';
+		vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+	var scriptElement = document.createElement('script');                    
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+
+
+<!-- 引入库 -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/library/echarts.js"></script>
+<script src="js/library/jquery.js"></script>
+<script src="js/anime-master/anime.min.js"></script>
+<script src="js/library/p5.min.js"></script>
+<script src="js/library/p5.dom.js"></script>
+<script src="https://cdn.bootcss.com/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="js/library/carrotsearch.foamtree.js"></script>
+
+
+<!-- 导入画图文件 -->
+<script src="js/fixed.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/bubble.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/foam.js"></script>
+
+</body>

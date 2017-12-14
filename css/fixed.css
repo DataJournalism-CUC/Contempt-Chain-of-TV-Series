@@ -1,0 +1,44 @@
+#fixed{z-index:10;position:absolute;/*height: 700px;*/top:0px;}
+.line{position:absolute;}
+.circle,#explore,.title{position: relative;}
+
+/*五个元素样式*/
+#mj{left:440px;/*background-image: url('../img/mj.png');background-color: #335175;*/}
+#rj{left:470px;/*background-image: url("../img/rj.png");background-color: #ff6d6e;*/}
+#yj{left:500px;/*background-image: url("../img/yj.png");background-color: #ffa88a;*/}
+#gcj{left:530px;/*background-image: url("../img/gcj.png");background-color: #927ce0*/}
+#hj{left:560px;/*background-image:url( "../img/hj.png");background-color: #5d93ff;*/}
+
+/*按钮样式*/
+#explore{top:650px;left:420px;width: 160px;text-align: center;height: 50px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    border:1.5px solid #a7a5a6;
+    color: #a7a5a6;
+  font-family: "";
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+/*#explore button{
+  color: #a7a5a6;
+  font-family: "";
+  font-size: 12px;
+  letter-spacing: 1px;
+  }*/
+.circle {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-color: #7a7879;
+  border-radius: 50%;
+  top:50px;
+  transition: all 2s ease 0s;
+  cursor: pointer;
+}
+
+#yi:hover{background-color: #9b4454;}
+#mj:hover{background-color: #ff6d6e;}
+#rj:hover{background-color: #33b9d6;}
+#hj:hover{background-color: #927ce0;}
+#gcj:hover{background-color: #ffa88a;}
+

@@ -1,0 +1,58 @@
+#sixth{}
+/*#trend{display: none}*/
+#trend2{height: 600px;}
+
+/*提示框的样式*/
+#trendLegend {
+	color:#fff;
+ 	display: inline-block;
+ 	/*max-width: 110px;*/
+ 	width: 300px;
+ 	height: 240px;
+ 	background-color: rgba(44,52,60,0.9);
+ 	/*border-color: #ccc;
+    border-width: 2px;*/
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    padding:10px 20px 10px 20px;
+    position: relative;
+    letter-spacing: 1px;
+
+ }
+/*box-shadow: -3px -2px 3px #1d181a;*/
+
+.TVimg{margin-top:5px;border-radius: 3px;width: 90px;height: 130px;position: absolute;left:15px;}
+.TVinfo{width: px;height: px;font-size:12px;position: relative;}
+.Ninfo,.Ginfo,.Yinfo,.Sinfo,.Dinfo,.Ainfo{position: absolute;}
+.Ninfo,.Ginfo{top:0px;overflow:hidden;}
+.Ninfo{letter-spacing:3px;font-weight:900;color:#ffd4c4;width: 150px;height: 40px;font-size:14px;right:20px;line-height:20px;} 
+.Ginfo{width: 8px;height: 40px;right:0px;line-height: 40px;}
+.Yinfo{width: 120px;height: 25px;right:40px;top:70px;}
+.Sinfo{width: 120px;height: 14px;right:40px;top:90px; }
+.Dinfo,.Ainfo{left:5px;width: 270px;line-height:15px;overflow: hidden;letter-spacing:2px;}
+.Dinfo{height: 15px;top:140px;}
+.Ainfo{height: 45px;top:165px;}
+
+/*下拉菜单的样式*/
+#Tselect{position: absolute;width: 400px;left:60px;top:-50px;}
+.Tselect{}
+.Tselect{width: 100px;height: 40px;margin-right: 20px;border-radius: 20px;}
+.Tselect{cursor:pointer;font: 15px/40px "微软雅黑";letter-spacing: 8px;text-align: right;color: #99a9b9;background-color: rgba(0,0,0,0);padding-left: 15px;}
+
+.Tselect option{margin-top: 20px;border-radius: 20px;height: 30px;}
+/*.Tselect option p{text-align: center;}*/
+
+
+#Tinfo{
+	width:240px;height:200px ;
+	font: 13px/22px "微软雅黑 Light";
+	letter-spacing: 2px;
+	color: #FFFAF0;
+	z-index: 10;
+	text-indent: 26px;
+}
+
+#THtitle{position: absolute;right: -10px;top:-60px;letter-spacing: 3px;text-align: right;}
+#THtitle h3{font-size: 25px;color: #FFFAF0;}
+#THtitle h3 span{color: #eb4a45;margin:0px 10px;}
+#THtitle p{font-size: 14px;color: #a7a5a6;}

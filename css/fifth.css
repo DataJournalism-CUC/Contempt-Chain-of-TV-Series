@@ -1,0 +1,51 @@
+#fifth{}
+/*散点图样式*/
+#comment{
+	height: 700px;
+	margin:20px auto;
+	/*position: absolute;top:120px;*/
+}
+#fifth .Stitle{
+	margin-bottom: 80px;
+}
+#scatLegend {
+	position: absolute;
+	top:235px;
+	right: 0px;
+	height: 90px;
+	z-index: 5;
+	padding-right: 11px;
+}
+/*筛选器样式*/
+#scatLegend span {
+	
+	/*width: 100px;*/
+	font-size: 15px;
+	margin-left: 20px;
+	color: #a7a5a6;
+	cursor: pointer;
+	letter-spacing: 5px;
+	padding: 0px 0px 5px 6px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	transition: all 2s ease 0s; /* Firefox 4 */
+	-webkit-transition: all 2s ease 0s; /* Safari and Chrome */
+	-o-transition: all 2s ease 0s; /* Opera */
+	/*border-bottom-color: #a7a5a6;*/
+
+}
+
+#scatLegend span[status=false]{
+	color:#a7a5a6;
+	border-bottom-color: #a7a5a6;
+}
+
+#scatLegend span[status=true][group=英剧]{border-bottom-color:#9b4454;color:#9b4454;}
+#scatLegend span[status=true][group=美剧]{border-bottom-color:#ff6d6e;color:#ff6d6e;}
+#scatLegend span[status=true][group=日剧]{border-bottom-color:#33b9d6;color:#33b9d6;}
+#scatLegend span[status=true][group=韩剧]{border-bottom-color:#927ce0;color:#927ce0;}
+#scatLegend span[status=true][group=国产剧]{border-bottom-color:#ffa88a;color:#ffa88a;}
+
+#scatLegend span:hover{color: #7a7879;border-bottom-color:#7a7879;}
