@@ -27,8 +27,8 @@ var groupBy = function(xs, key) {
 };
 
 function preload(){
-	trendData = loadJSON("../json/trend.json");
-	bgImg = loadImage("../img/bg_trend.png");
+	trendData = loadJSON("json/trend.json");
+	bgImg = loadImage("img/bg_trend.png");
 }
 
 function prepareData(data){
